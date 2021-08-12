@@ -1,5 +1,6 @@
 # Data-driven E-commerce Loyalty Program
 *An Udacity Data Scientist Nanodegree capstone project*
+
 Author: [Mateus Gomes](mailto:mpicanco96@gmail.com)
 
 # Description
