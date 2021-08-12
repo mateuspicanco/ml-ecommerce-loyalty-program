@@ -1,18 +1,52 @@
-# Floor Plan
-This repository contains the code, process and design notes regarding **Floor Plan**, a proof of concept project for a *customer segmentation* and *product recommendation* tool, applied in the context of E-commerce using the [UK High-value Customers dataset](https://www.kaggle.com/vik2012kvs/high-value-customers-identification) on Kaggle.
+# Data-driven E-commerce Loyalty Program
+*An Udacity Data Scientist Nanodegree capstone project*
+Author: [Mateus Gomes](mailto:mpicanco96@gmail.com)
 
-# Business Motivation
-- [] Add the business motivation section;
+# Description
+This repository contains the code, reports and images for an E-commerce Loyalty Program proof of concept built using Machine Learning techniques. It applies concepts of Anomaly Detection to the context of *Customer Segmentation* using the [UK High-value Customers dataset](https://www.kaggle.com/vik2012kvs/high-value-customers-identification) on Kaggle.
 
-# Project Objective
-The goal of this project is to provide a tool for CRM analysts to work from when performing public selection for marketing campaings and other actions related to rentabilizing current clients. 
+The project structure can be defined as:
 
-The tool provides an interface that helps analysts explore different Customer Segmentation models developed for this project,as well enabling customer-level product recommendations and messaging.  
+1. `configs/`: the configuration files used in the project, such as requirements.txt and anaconda environment files;
+2. `data/`: the directory contained both raw and processed data produced from the jupyter notebooks;
+3. `models/`: any trained models produced during the project;
+4. `reports/`: images, markdown files and PDFs for the reports written for this capstone project;
+5. `notebooks/`: contains the data processing, EDA and modeling processes documented as jupyter notebooks.
+
+The final report (which is also a blog post) can be found [here]().
+
+# Environment Setup
+As discussed in the project's report and the individual jupyter notebooks, this project utilizes two distinct environments, one for performing Data Preparation with `Spark` and other containing the usual machine learning libraries.
+
+To run the environment for Data Prepartion steps, one can run the following commands:
+
+```bash
+# pulls the official image from docker hub
+docker pull jupyter/pyspark-notebook
+
+# runs the container and assigns the present working directory for the container to access -- works fine if you run in the root directory of this repository
+docker run -it -p 8888:8888 -v $(pwd):/home/jovyan/work/projects/ jupyter/pyspark-notebook
+```
+
+To emulate the development environment for the EDA and modeling sections of the project, one can use the following command with the conda environment file provided:
+
+```bash
+# creates a conda environment for the
+conda env create -f ./configs/development_environment.yml
+
+# activates the environment:
+conda activate name_of_the_environment
+
+# run the jupyter notebooks:
+jupyter notebook
+```
 
 # Technologies used in this project
-- *UI and Data Visualization*: `streamlit`, `plotly`;
-- *Data Processing and Storage*: `pandas`, `numpy`, `sqlite`;
+- *UI and Data Visualization*: `plotly`;
+- *Data Processing*: `pandas`, `numpy`, `pyspark`;
 - *Exploratory Analysis*: `seaborn`, `scipy`;
 - *Machine Learning*: `sklearn`;
-- *Model tracking and versioning*: `mlflow`;
-- *Data tracking and versioning*: `dvc`;
+- *Interpretability*: `shap`;
+
+# Downloading the Project
+The entire folder for this project can be downloaded in [Google Drive Folder](https://drive.google.com/drive/folders/1Ic71OSdJWhBZHzp63DCcLQcpWIVDlmFD?usp=sharing)
