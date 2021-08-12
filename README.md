@@ -1,4 +1,5 @@
 # Data-driven E-commerce Loyalty Program
+
 *An Udacity Data Scientist Nanodegree capstone project*
 
 Author: [Mateus Gomes](mailto:mpicanco96@gmail.com)
@@ -19,7 +20,7 @@ The final report (which is also a blog post) can be found [here]().
 # Environment Setup
 As discussed in the project's report and the individual jupyter notebooks, this project utilizes two distinct environments, one for performing Data Preparation with `Spark` and other containing the usual machine learning libraries.
 
-To run the environment for Data Prepartion steps, one can run the following commands:
+To run the environment for Data Preparation steps, one can run the following commands:
 
 ```bash
 # pulls the official image from docker hub
