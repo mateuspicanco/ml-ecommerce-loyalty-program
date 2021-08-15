@@ -1,4 +1,4 @@
-# Data-driven E-commerce Loyalty Program
+# Machine Learning E-commerce Loyalty Program
 
 *An Udacity Data Scientist Nanodegree capstone project*
 
