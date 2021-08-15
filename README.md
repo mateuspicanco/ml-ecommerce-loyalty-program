@@ -15,7 +15,9 @@ The project structure can be defined as:
 4. `reports/`: images, markdown files and PDFs for the reports written for this capstone project;
 5. `notebooks/`: contains the data processing, EDA and modeling processes documented as jupyter notebooks.
 
-The final report (which is also a blog post) can be found [here]().
+Note: since plotly graphs don't render nicely in github repositories and require some configuration to show up pre-rendered, I generated html copies of the notebooks as well. They can be found in the `reports/` folder.
+
+The final report (which is also a blog post) can be found [here](https://mateuspicanco.medium.com/building-a-ml-based-e-commerce-loyalty-program-9848a93d7463).
 
 # Environment Setup
 As discussed in the project's report and the individual jupyter notebooks, this project utilizes two distinct environments, one for performing Data Preparation with `Spark` and other containing the usual machine learning libraries.
@@ -51,4 +53,4 @@ jupyter notebook
 - *Interpretability*: `shap`;
 
 # Downloading the Project
-The entire folder for this project can be downloaded in [Google Drive Folder](https://drive.google.com/drive/folders/1Ic71OSdJWhBZHzp63DCcLQcpWIVDlmFD?usp=sharing)
+The entire folder for this project can be downloaded in [Google Drive Folder](https://drive.google.com/drive/folders/1Wwl-XteeFY3ildzItSKD5BS58W4bcmNm?usp=sharing)
